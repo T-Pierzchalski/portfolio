@@ -1,0 +1,10 @@
+Nawigacja - czarny, odcien
+
+
+aktywne linki w  nawigacji - fioletowy
+
+
+przyciski w nawigacji fioletowy, mocniejszy odcien
+
+
+body - odcien niebieski, jasny

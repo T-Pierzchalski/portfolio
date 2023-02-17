@@ -2,10 +2,68 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
-$primary: orange;
-$secondary: indigo;
-$info: red;
+$primary: hsl(0, 0%, 20%);
+$secondary: hsl(300, 100%, 15%);
+$success: green;
+$info: blue;
+$warning: yellow;
+$danger: red;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+.nav-link {
+	color: white;
+	margin-top: 0.5rem;
+	font-weight: bold;
+	border-radius: 10%;
+}
+.nav-item {
+	padding-inline: 1rem;
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+	color: $secondary;
+}
+.nav-link:active,
+.nav-link:focus {
+	background-color: $info;
+	color: white;
+}
+.dropdown-item {
+	color: white;
+}
+ul > li.dropdown:hover ul {
+	display: block;
+}
+.navbar-brand {
+	color: $white;
+	max-width: 30%;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+	color: white;
+	border: 4px solid $secondary;
+}
+.btn-outline-secondary {
+	border: solid 3px $secondary;
+	color: white;
+}
+.container {
+	color: white;
+}
+.form-search {
+	border: 2px solid $info;
+}
+.form-search:hover,
+.form-search:focus {
+	border: 2px solid $secondary;
+}
+.btn:hover {
+	font-weight: bold;
+}
+.img-fluid {
+	padding: 1rem;
+	border-radius: 5%;
+}
