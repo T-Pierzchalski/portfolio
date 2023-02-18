@@ -12,6 +12,8 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    
 
 
 
@@ -65,7 +67,7 @@
 <div class="container mt-4 rounded d-sm-flex flex-wrap justify-content-between">
   <div class="row">
   <div class="col-lg-6 bg-primary mb-3 mb-lg-0">
-<div id="Slajder-Samochody" class="carousel slide" data-bs-ride="false">
+<div id="Slajder-Samochody" class="carousel slide" data-bs-interval="false">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#Slajder-Samochody" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#Slajder-Samochody" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -73,17 +75,17 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://cdn.pixabay.com/photo/2016/02/13/13/11/oldtimer-1197800_960_720.jpg" class="d-block w-100 img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="fw-bold">Samochód nr-1</h5>
-        <p>Krótki opis</p>
+      <img src="https://cdn.pixabay.com/photo/2017/01/06/22/48/old-trafford-1959155__340.jpg" class="d-block w-100 img-fluid" alt="Old Traford">
+      <div class="carousel-caption d-none d-md-block me-4">
+        <h5 class="fw-bold">Old traford</h5>
+        <p>Stadion Manchesteru United</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220__340.jpg" class="d-block w-100 img-fluid" alt="...">
+      <img src="https://cdn.pixabay.com/photo/2018/05/06/03/39/woman-3377839__340.jpg" class="d-block w-100 img-fluid" alt="Hip hop">
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="fw-bold">Samochód nr-2</h5>
-        <p>Krótki opis</p>
+        <h5 class="fw-bold">Hip Hop</h5>
+        <p>Gatunek muzyki</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -105,13 +107,127 @@
 </div>
   </div>
   <div class="col-lg-5 ms-auto bg-secondary px-5 py-4">
-    <p class="text-center justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae nesciunt labore commodi quisquam necessitatibus blanditiis. Praesentium, inventore sunt commodi pariatur unde eos nulla maiores impedit aperiam. Corrupti, dolorum voluptas.
-  Natus ipsum doloribus ullam animi praesentium voluptate porro molestias iure architecto! Error natus sit non voluptatum repudiandae consectetur suscipit saepe commodi molestias perferendis. Officiis fugit nostrum corrupti, pariatur modi neque.
-  Similique minima corrupti mollitia tempora consequuntur sint commodi, ratione et repellat autem! Laudantium, adipisci debitis tempora quidem obcaecati in illo facilis vitae voluptatem minus nesciunt iure exercitationem recusandae et molestiae?</p></div>
+    <div id="text-slider" class="carousel slide" data-bs-interval="false" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>Manchester United</h1>
+          <p class="text-center justify">Manchester United to klub piłkarski, którym interesuję się od dziecka. Pamiętam złote czasy sir Alexa Fergusona, piękne bramki i liczne trofea. <br>
+            <button class="btn btn-info float-end my-1" id="rozwin" onclick="toggleDisplay('ukryty-tekst', 'rozwin')">Rozwiń</button>
+            <p style="display:none" id="ukryty-tekst">
+              Manchester United to angielski klub piłkarski z siedzibą w Manchesterze, założony w 1878 roku. Jest to jeden z najbardziej utytułowanych klubów na świecie, zdobywca m.in. 20 tytułów mistrza Anglii, 3 zwycięstw w Lidze Mistrzów oraz Pucharów Europy. Znani piłkarze, którzy grali w barwach Manchesteru United to m.in. George Best, Eric Cantona, Ryan Giggs, Paul Scholes, David Beckham czy Cristiano Ronaldo.
+            </p>
+          </p>
+        </div>
+        <div class="carousel-item">
+          <h1>Hip Hop</h1>
+          <p class="text-center justify">Muzyka, która jest najbliższa mojemu sercu to hip-hop. Polega on na recytowaniu "wierszu" w rytmie muzyki<br>
+            <button class="btn btn-info float-end my-1" id="rozwin2" onclick="toggleDisplay('ukryty-tekst2', 'rozwin2')">Rozwiń</button>
+            <p style="display:none" id="ukryty-tekst2">
+              Hip hop to gatunek muzyczny, który powstał w latach 70. XX wieku w Stanach Zjednoczonych. Charakteryzuje się połączeniem rapu, bitu i elementów muzyki funk, soul oraz R&B. Hip hop to jednak nie tylko muzyka, ale również kultura, w której ważne są elementy takie jak taniec, graffiti czy modę. Teksty utworów hip hopowych często opowiadają o życiu w gettach, o trudnościach i przeciwnościach losu, ale też o polityce, społeczeństwie czy kulturze popularnej. Hip hop ma ogromne znaczenie dla młodego pokolenia na całym świecie i jest uznawany za jedną z najważniejszych i najbardziej wpływowych kultur współczesnych.
+            </p>
+          </p>
+        </div>
+        <div class="carousel-item">
+          <h1>Header 3</h1>
+          <p class="text-center justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae nesciunt labore commodi quisquam necessitatibus blanditiis. Praesentium, inventore sunt commodi pariatur unde eos nulla maiores impedit aperiam. Corrupti, dolorum voluptas.<br>
+            <button class="btn btn-info float-end my-1" id="rozwin3" onclick="toggleDisplay('ukryty-tekst3', 'rozwin3')">Rozwiń</button>
+            <p style="display:none" id="ukryty-tekst3">
+              Natus ipsum doloribus ullam animi praesentium voluptate porro molestias iure architecto! Error natus sit non voluptatum repudiandae consectetur suscipit saepe commodi molestias perferendis. Officiis fugit nostrum corrupti, pariatur modi neque.
+              Similique minima corrupti mollitia tempora consequuntur sint commodi, ratione et repellat autem! Laudantium, adipisci debitis tempora quidem obcaecati in illo facilis vitae voluptatem minus nesciunt iure exercitationem recusandae et molestiae?
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  
 </div>
 
 
 </div>
+</section>
+<section>
+  <header>
+    <h1 class="fw-bold h1 fs-2 text-center mt-5">ZDJĘCIA</h1>
+  </header>
+  <div class="container mt-5 rounded d-sm-flex flex-wrap">
+    <div class="row justify-content-between">
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł1</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł2</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł3</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł4</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł5</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł6</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł7</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł8</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł9</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł10</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł11</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">tytuł12</h1>
+        <img src="" alt="" class="img-thumbnail">
+      </header>
+      <p>Przykładowa treść</p></div>
+
+    </div>
+  </div>
 </section>
 <body>
 
@@ -121,5 +237,8 @@
 
 
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+
 </body>
 </html>
