@@ -65,5 +65,41 @@ ul > li.dropdown:hover ul {
 }
 .img-fluid {
 	padding: 1rem;
-	border-radius: 5%;
+	border-radius: 10%;
+}
+
+.link {
+	color: $info;
+}
+
+.row {
+	header {
+		img {
+			display: block;
+			max-height: 200px;
+			width: auto;
+			margin-inline: auto;
+		}
+	}
+	p {
+		text-indent: 0;
+		margin-top: 1rem;
+		text-align: center;
+		margin-inline: 1rem;
+	}
+}
+header {
+	h1 {
+		a {
+			text-decoration: none;
+		}
+	}
+}
+// listy
+
+.list-group {
+	background-color: $primary;
+	color: black;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 }

@@ -19,7 +19,7 @@
 
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-md bg-primary position-sticky-top">
+    <nav class="navbar navbar-expand-md bg-primary sticky-md-top">
       <div class="container-fluid">
         <a class="navbar-brand ms-3 fs-2 fw-bold" href="#"><img src="images/logo.png" alt="logo" class="rounded img-fluid"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +38,10 @@
                 Kategorie
               </a>
               <ul class="dropdown-menu mx-auto px-md-1 bg-secondary">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#Zainteresowania">Zainteresowania</a></li>
+                <li><a class="dropdown-item" href="#Umiejetnosci">Umiejętności</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#UmiejetnosciMiekkie">Umiejętności Miękkie</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -60,13 +60,24 @@
       </div>
     </nav>
 </head>
-<section>
+<body>
+  
+<div class="side-bar float-end d-none d-lg-block">
+    <div class="list-group" id="pasek-boczny">
+      <a class="list-group-item list-group-item-action" href="#Zainteresowania">Zainteresowania</a>
+      <a class="list-group-item list-group-item-action" href="#Umiejetnosci">Umiejętności</a>
+      <a class="list-group-item list-group-item-action" href="#UmiejetnosciMiekkie">Umiejętności miękkie</a>
+    </div>
+</div>
+<div data-bs-spy="scroll" data-bs-target="#pasek-boczny" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+<!-- Slajdery -->
+<section name="Slajder z zainteresowaniami" id="Zainteresowania">
   <header>
-    <h1 class="h2 text-center fw-weight mt-3 text-secondary text-uppercase">Slajder</h1>
+    <h1 class="h2 text-center fw-bold mt-3 text-secondary offset-1">GŁÓWNE ZAINTERESOWANIA</h1>
   </header>
 <div class="container mt-4 rounded d-sm-flex flex-wrap justify-content-between">
   <div class="row">
-  <div class="col-lg-6 bg-primary mb-3 mb-lg-0">
+  <div class="offset-lg-1 col-lg-5 bg-primary mb-3 mb-lg-0 ">
 <div id="Slajder-Samochody" class="carousel slide" data-bs-interval="false">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#Slajder-Samochody" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,10 +86,10 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://cdn.pixabay.com/photo/2017/01/06/22/48/old-trafford-1959155__340.jpg" class="d-block w-100 img-fluid" alt="Old Traford">
-      <div class="carousel-caption d-none d-md-block me-4">
-        <h5 class="fw-bold">Old traford</h5>
-        <p>Stadion Manchesteru United</p>
+      <img src="https://cdn.pixabay.com/photo/2019/07/16/18/18/frontend-4342425_960_720.png" class="d-block w-100 img-fluid" alt="Front-end designer">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="fw-bold">Programowanie</h5>
+        <p>Front end designer</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -89,10 +100,10 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://cdn.pixabay.com/photo/2014/09/07/22/34/car-race-438467__340.jpg" class="d-block w-100 img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="fw-bold">Samochód nr-3</h5>
-        <p>Krótki opis</p>
+      <img src="https://cdn.pixabay.com/photo/2017/01/06/22/48/old-trafford-1959155__340.jpg" class="d-block w-100 img-fluid" alt="Old Traford">
+      <div class="carousel-caption d-none d-md-block me-4">
+        <h5 class="fw-bold">Old traford</h5>
+        <p>Stadion Manchesteru United</p>
       </div>
     </div>
   </div>
@@ -110,36 +121,52 @@
     <div id="text-slider" class="carousel slide" data-bs-interval="false" >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <h1>Manchester United</h1>
-          <p class="text-center justify">Manchester United to klub piłkarski, którym interesuję się od dziecka. Pamiętam złote czasy sir Alexa Fergusona, piękne bramki i liczne trofea. <br>
-            <button class="btn btn-info float-end my-1" id="rozwin" onclick="toggleDisplay('ukryty-tekst', 'rozwin')">Rozwiń</button>
-            <p style="display:none" id="ukryty-tekst">
-              Manchester United to angielski klub piłkarski z siedzibą w Manchesterze, założony w 1878 roku. Jest to jeden z najbardziej utytułowanych klubów na świecie, zdobywca m.in. 20 tytułów mistrza Anglii, 3 zwycięstw w Lidze Mistrzów oraz Pucharów Europy. Znani piłkarze, którzy grali w barwach Manchesteru United to m.in. George Best, Eric Cantona, Ryan Giggs, Paul Scholes, David Beckham czy Cristiano Ronaldo.
+          <h1>Front-end</h1>
+          <p class="text-center justify">Od momentu rozpoczęcia studiów, zacząłem mocno interesować się web-developerką. Dziś jestem w stanie zbudować cały serwis z zachowaną responsywnością. <strong>Moje wszystkie umiejętności znajdą się w sekcji niżej.<br></strong>
+            <button class="btn btn-info float-end my-1" id="rozwin3" onclick="toggleDisplay('ukryty-tekst3', 'rozwin3')">Rozwiń</button>
+            <p style="display:none"  class="text-center justify" id="ukryty-tekst3">
+              Specjalista IT w zakresie frontendu musi znać trzy najważniejsze języki kodowania, czyli HTML, CSS i JavaScript. Każdy z nich spełnia inne funkcje w programowaniu stron i aplikacji:
+
+              HTML – opisuje cel i znaczenie wszystkich bloków strony,
+              CSS – język arkuszy stylów (ang. style sheet language), który odpowiada za wygląd strony (kształty, położenie i kolory użytych elementów),
+              JavaScript – idealny do programowania funkcjonalności, ścieżki zachowań użytkowników i sprawnego działania strony.
+              W dużym uproszczeniu, HTML odpowiedzialny jest za zawartość strony WWW, CSS za to, jak wygląda, a JavaScript za to, jak działa.
+              <text class="fw-light source">
+              <br>źródło: sdcacademy.pl
+              <a class="link" href="https://sdacademy.pl/frontend-co-to-jest/">
+                https://sdacademy.pl/frontend-co-to-jest/
+              </a>
+            </text>
             </p>
           </p>
         </div>
         <div class="carousel-item">
           <h1>Hip Hop</h1>
-          <p class="text-center justify">Muzyka, która jest najbliższa mojemu sercu to hip-hop. Polega on na recytowaniu "wierszu" w rytmie muzyki<br>
+          <p class="text-center justify">Muzyka, która jest najbliższa mojemu sercu to hip-hop. Polega on na recytowaniu "wierszu" w rytmie muzyki.<br>
             <button class="btn btn-info float-end my-1" id="rozwin2" onclick="toggleDisplay('ukryty-tekst2', 'rozwin2')">Rozwiń</button>
-            <p style="display:none" id="ukryty-tekst2">
-              Hip hop to gatunek muzyczny, który powstał w latach 70. XX wieku w Stanach Zjednoczonych. Charakteryzuje się połączeniem rapu, bitu i elementów muzyki funk, soul oraz R&B. Hip hop to jednak nie tylko muzyka, ale również kultura, w której ważne są elementy takie jak taniec, graffiti czy modę. Teksty utworów hip hopowych często opowiadają o życiu w gettach, o trudnościach i przeciwnościach losu, ale też o polityce, społeczeństwie czy kulturze popularnej. Hip hop ma ogromne znaczenie dla młodego pokolenia na całym świecie i jest uznawany za jedną z najważniejszych i najbardziej wpływowych kultur współczesnych.
+            <p style="display:none"  class="text-center justify" id="ukryty-tekst2">
+              Gatunek jest oparty na rapowaniu oraz muzyce disco, soul i funk. Na gatunek muzyczny hip-hopu składają się: rytmizowany styl muzyki o stałym BPM oraz rapowaniu, czyli rytmicznym wypowiadaniu tekstu. Styl muzyczny hip-hop jest jednym z filarów kultury hip-hopowej.
+
+              Muzyka hip-hop powstała, gdy DJ-e zaczęli tworzyć bity za pomocą zapętlania zapisów partii solowych, granych oryginalnie na perkusji na dwóch gramofonach, robiąc tak zwany sampling. Do zapętlanych fragmentów po jakimś czasie doszło rapowanie.
+              <br>
+              <text class="fw-light source">
+              źródło: Wikipedia - <a class="link" href="https://pl.wikipedia.org/wiki/Hip-hop_(muzyka)#Charakterystyka" target="_blank">https://pl.wikipedia.org/wiki/Hip-hop_(muzyka)#Charakterystyka</a></text>
             </p>
           </p>
         </div>
         <div class="carousel-item">
-          <h1>Header 3</h1>
-          <p class="text-center justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae nesciunt labore commodi quisquam necessitatibus blanditiis. Praesentium, inventore sunt commodi pariatur unde eos nulla maiores impedit aperiam. Corrupti, dolorum voluptas.<br>
-            <button class="btn btn-info float-end my-1" id="rozwin3" onclick="toggleDisplay('ukryty-tekst3', 'rozwin3')">Rozwiń</button>
-            <p style="display:none" id="ukryty-tekst3">
-              Natus ipsum doloribus ullam animi praesentium voluptate porro molestias iure architecto! Error natus sit non voluptatum repudiandae consectetur suscipit saepe commodi molestias perferendis. Officiis fugit nostrum corrupti, pariatur modi neque.
-              Similique minima corrupti mollitia tempora consequuntur sint commodi, ratione et repellat autem! Laudantium, adipisci debitis tempora quidem obcaecati in illo facilis vitae voluptatem minus nesciunt iure exercitationem recusandae et molestiae?
+          <h1>Manchester United</h1>
+          <p class="text-center justify">Manchester United to klub piłkarski, którym interesuję się od dziecka. Pamiętam złote czasy sir Alexa Fergusona, piękne bramki i liczne trofea. <br>
+            <button class="btn btn-info float-end my-1" id="rozwin" onclick="toggleDisplay('ukryty-tekst', 'rozwin')">Rozwiń</button>
+            <p class="text-center justify" style="display:none" id="ukryty-tekst">
+              Manchester United to angielski klub piłkarski z siedzibą w Manchesterze, założony w 1878 roku. Jest to jeden z najbardziej utytułowanych klubów na świecie, zdobywca m.in. 20 tytułów mistrza Anglii, 3 zwycięstw w Lidze Mistrzów oraz Pucharów Europy. Znani piłkarze, którzy grali w barwach Manchesteru United to m.in. George Best, Eric Cantona, Ryan Giggs, Paul Scholes, David Beckham czy Cristiano Ronaldo.
             </p>
           </p>
         </div>
       </div>
     </div>
     </div>
+    
 
   
 </div>
@@ -147,88 +174,112 @@
 
 </div>
 </section>
+
+
+<!-- Kompetencje -->
 <section>
   <header>
-    <h1 class="fw-bold h1 fs-2 text-center mt-5">ZDJĘCIA</h1>
+    <h1 class="fw-bold h1 fs-2 text-center mt-5 text-secondary" id="Umiejetnosci">UMIEJĘTNOŚCI</h1>
   </header>
   <div class="container mt-5 rounded d-sm-flex flex-wrap">
     <div class="row justify-content-between">
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <div class="col-md-5 col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
       <header>
-        <h1 class="h3 fw-bold">tytuł1</h1>
-        <img src="" alt="" class="img-thumbnail">
+        <h1 class="h3 fw-bold">HTML</h1>
+        <img src="https://th.bing.com/th/id/R.5d321e50e1c1fdf498c8510b5de7d2df?rik=JY19qMg6f6T54g&riu=http%3a%2f%2f1024x.net%2fwallpapers%2f30%2fW3C_HTML5_Badge_Logo.jpg&ehk=lDuz7Rbl5QQj5ySYxn6GDZiy5Qznxv2LXK0CBTmgcwQ%3d&risl=&pid=ImgRaw&r=0" alt="html-5" class="img-thumbnail">
       </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <p>Dobra znajomość języka znaczników HTML 5. Język pozwala na stworzenie szkieletu strony WWW.</p></div>
+      <div class="col-md-5 col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
       <header>
-        <h1 class="h3 fw-bold">tytuł2</h1>
-        <img src="" alt="" class="img-thumbnail">
+        <h1 class="h3 fw-bold">CSS</h1>
+        <img src="https://th.bing.com/th?id=OIP.pXrq6xy_Gxua3qTfGZLXqwHaKc&w=210&h=296&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="css" class="img-thumbnail">
       </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <p>Bardzo dobra znajomość języka css. Podstawowe zadanie tego języka jest upiększanie witryny WWW.</p></div>
+      <div class="col-md-5 col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
       <header>
-        <h1 class="h3 fw-bold">tytuł3</h1>
-        <img src="" alt="" class="img-thumbnail">
+        <h1 class="h3 fw-bold">JavaScript</h1>
+        <img src="https://th.bing.com/th?id=OIP.tQJEnqJpJ4iQf_bzQkWCQgAAAA&w=212&h=212&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="JavaScript" class="img-thumbnail">
       </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <p>Znajomość kodu Java Script pozwalająca na jego edytowanie, a także pisanie prostych skryptów. Język m.in. pozwala na pisanie zaawansowanych animacji i aktywnych funkcji.</p></div>
+      <div class="col-md-5 col-lg-5 bg-primary mx-sm-3 mt-2 mt-sm-3">
       <header>
-        <h1 class="h3 fw-bold">tytuł4</h1>
-        <img src="" alt="" class="img-thumbnail">
+        <h1 class="h3 fw-bold">Bootstrap-5</h1>
+        <img src="https://th.bing.com/th/id/OIP.7HHjYiNdT8wJUR3C87kglgAAAA?w=183&h=168&c=7&r=0&o=5&pid=1.7" alt="Bootstrap-5" class="img-thumbnail">
       </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <p>Znajomość bootstrap-5, czyli frameworka pozwalającego na tworzenie responsywnych stron WWW.</p></div>
+      <div class="col-lg-5 bg-primary mx-sm-3 mt-2 mt-sm-3">
       <header>
-        <h1 class="h3 fw-bold">tytuł5</h1>
-        <img src="" alt="" class="img-thumbnail">
+        <h1 class="h3 fw-bold">Scss</h1>
+        <img src="https://th.bing.com/th/id/OIP.FhbKSs9BmW3BtMJyRmAlkQHaFj?w=218&h=180&c=7&r=0&o=5&pid=1.7" alt="SCSS" class="img-thumbnail">
       </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
-      <header>
-        <h1 class="h3 fw-bold">tytuł6</h1>
-        <img src="" alt="" class="img-thumbnail">
-      </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
-      <header>
-        <h1 class="h3 fw-bold">tytuł7</h1>
-        <img src="" alt="" class="img-thumbnail">
-      </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
-      <header>
-        <h1 class="h3 fw-bold">tytuł8</h1>
-        <img src="" alt="" class="img-thumbnail">
-      </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
-      <header>
-        <h1 class="h3 fw-bold">tytuł9</h1>
-        <img src="" alt="" class="img-thumbnail">
-      </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
-      <header>
-        <h1 class="h3 fw-bold">tytuł10</h1>
-        <img src="" alt="" class="img-thumbnail">
-      </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
-      <header>
-        <h1 class="h3 fw-bold">tytuł11</h1>
-        <img src="" alt="" class="img-thumbnail">
-      </header>
-      <p>Przykładowa treść</p></div>
-      <div class="col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
-      <header>
-        <h1 class="h3 fw-bold">tytuł12</h1>
-        <img src="" alt="" class="img-thumbnail">
-      </header>
-      <p>Przykładowa treść</p></div>
+      <p>Znajomość języka scss, sass, który oferuję wiecej niż podstawowy język css. Języka używam głównie w celu edycji bootstrapowych klas.</p></div></div>
 
+      <!-- Umięjetności miekkie -->
+      <header class="col-12" id="UmiejetnosciMiekkie">
+      <h1 class="fw-bold h1 fs-2 text-center my-3 my-md-5 fw-bold text-secondary">UMIEJĘTNOŚCI MIĘKKIE</h1>
+    </header>
+      <div class="row justify-content-between">
+      <div class="col-md-3 col-lg-2 bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">Edytory tekstu</h1>
+        <img src="https://th.bing.com/th/id/OIP.7P7q6NM0ho-fli0FFJDEAAHaHc?w=166&h=180&c=7&r=0&o=5&pid=1.7" alt="Visual-studio-code" class="img-thumbnail">
+      </header>
+      <p>Do pracy z kodem używam Visual Studio Code.</p></div>
+      <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">Rozszerzenia</h1>
+        <img src="https://th.bing.com/th/id/OIP.l9gDJnij0VDK7-PsFSlffwHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7" alt="Roszerzenia" class="img-thumbnail">
+      </header>
+      <p>Umiem korzystać z emmeta, live-server, ftp, terminala node.</p></div>
+      <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">Systemy CMS</h1>
+        <img src="https://th.bing.com/th/id/OIP.HQtjXs9IJd3DALrnJxkFIQHaHa?w=157&h=180&c=7&r=0&o=5&pid=1.7" alt="CMS" class="img-thumbnail">
+      </header>
+      <p>Najlepiej radzę sobie z Wordpressem, ale znam także interfejsy Drupala oraz Joomli.</p></div>
+      <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">PHP</h1>
+        <img src="https://th.bing.com/th/id/OIP.eV9sEe6d7o5W-X56THnufwHaHa?w=170&h=180&c=7&r=0&o=5&pid=1.7" alt="PHP" class="img-thumbnail">
+      </header>
+      <p>Znam język php, nie umieściłem go wyżej, ponieważ głównie, funkcje tego języka wykorzystuje w Wordpressie.</p></div>
+      <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">Systemy baz danych</h1>
+        <img src="https://th.bing.com/th/id/OIP.LMT-QUTUbWK8Plz5c8mMgQHaHa?w=176&h=180&c=7&r=0&o=5&pid=1.7" alt="Bazy danych" class="img-thumbnail">
+      </header>
+      <p>Na studiach przerobiłem MySQL przy wykorzystaniu phpmyadmin oraz system Microsoft Acces.</p></div>
+      <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">Adobe Illustrator</h1>
+        <img src="https://th.bing.com/th/id/OIP.EGILvYy6ZRSaNfy1kzQNcAAAAA?w=185&h=185&c=7&r=0&o=5&pid=1.7" alt="Adobe illustrator" class="img-thumbnail">
+      </header>
+      <p>Potrafię korzystać z edytora graficznego, kiedyś zajawkowo tworzyłem loga.</p></div>
+      <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+      <header>
+        <h1 class="h3 fw-bold">Adobe premiere</h1>
+        <img src="https://th.bing.com/th/id/OIP.BRtR-w2bm5M0ZOkfvE_lFgHaHa?w=185&h=185&c=7&r=0&o=5&pid=1.7" alt="Adobe premiere" class="img-thumbnail">
+      </header>
+      <p>Na studiach tworzyliśmy filmy z wykorzystaniem tego programu.</p></div>
+      <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+        <header>
+          <h1 class="h3 fw-bold">Sprzęt PC</h1>
+          <img src="https://th.bing.com/th/id/OIP.sTroV_EY3ZpxESNxQn_glwHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="Znajomość sprzętu PC" class="img-thumbnail">
+        </header>
+        <p>Interesuję się sprzętem komputerowym, potrafię sam złożyć komputer, diagnozować problemy itp.</p></div>
+        <div class="col-md-3 col-lg-2  bg-primary mx-sm-3 mt-2 mt-sm-3">
+          <header>
+            <h1 class="h3 fw-bold">GitHub</h1>
+            <img src="https://th.bing.com/th/id/OIP.NGIDdVP6vw9ue_D-mrEVFQHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7" alt="Adobe premiere" class="img-thumbnail">
+          </header>
+          <p>Potrafię korzystać z panelu github oraz z konsoli gitbash.
+            <br>Link do repozytorium:
+            <a class="link source" href="https://github.com/TrueDie3?tab=repositories">https://github.com/TrueDie3?tab=repositories</a>
+          </p></div>
     </div>
   </div>
 </section>
+<footer class="mt-3 mt-md-5 footer container-fluid fw-bold bg-primary text-white">&copy; Tomasz Pierzchalski, 2023, Portfolio</footer>
 <body>
 
 

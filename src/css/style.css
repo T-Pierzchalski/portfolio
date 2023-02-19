@@ -7,11 +7,28 @@ body,
 	text-decoration: none;
 	list-style-type: none;
 	font-family: raleway;
+	scroll-behavior: smooth;
 }
 body {
 	background-color: hsl(0, 0%, 20%, 0.25);
 }
+.source {
+	font-size: 0.75rem;
+	text-justify: inter-word;
+}
 
+#Zainteresowania,
+#Umiejetnosci,
+#UmiejetnosciMiekkie {
+	scroll-margin-top: 200px;
+}
+
+.side-bar {
+	position: sticky;
+	left: 0;
+	top: 200px;
+	max-width: max-content;
+}
 
 @media screen and (min-width: 768px) {
 	.form-size {
