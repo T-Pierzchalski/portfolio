@@ -19,7 +19,6 @@ $list-group-active-border-color: $list-group-active-bg;
 
 $list-group-action-active-color: $primary;
 $list-group-action-active-bg: none;
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
@@ -38,11 +37,10 @@ $list-group-action-active-bg: none;
 	color: $secondary;
 }
 .nav-link:active,
-.nav-link:focus,
 .nav-link.active {
 	background-color: $info;
-	color: white;
 }
+
 .dropdown-item {
 	color: white;
 }
