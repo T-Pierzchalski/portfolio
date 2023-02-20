@@ -52,13 +52,70 @@
             <input class="order-2 form-control ms-2 me-md-2 form-search" type="Search" placeholder="Wyszukaj w serwisie" aria-label="Wyszukaj">
             <button class="order-1 btn btn-outline-info" type="submit">Szukaj</button>
           </form>
-          <form action="" class="d-flex mx-auto me-md-3">
+          <div class="d-flex mx-auto me-md-3">
             <button class="btn btn-outline-secondary me-1 w-100 w-md-25" data-bs-toggle="modal" data-bs-target="#loginModal">Logowanie</button>
             <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#rejestracjaModal">Rejestracja</button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Logowanie</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+          </div>
+            <form action="" class="modal-body d-flex flex-column justify-content-center">
+              <label>Login
+              <input type="text" placeholder="Login" aria-placeholder="Login">
+            </label><br>
+            <label>Hasło
+              <input  type="password" placeholder="Hasło" aria-placeholder="Hasło">
+            </label><br>
+            <label >Zapamiętaj 
+            <input type="checkbox">
+          </label>
+            </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Anuluj</button>
+            <button type="button" class="btn btn-secondary">Zaloguj się</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal rejestracji -->
+    <div class="modal fade" id="rejestracjaModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Rejestracja</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+          </div>
+              <form action="" class="modal-body d-flex flex-column justify-content-center">
+                <label>Email
+                  <input type="text" placeholder="Email" aria-placeholder="Email">
+                </label><br>
+                <label>Login
+                <input type="text" placeholder="Login" aria-placeholder="Login">
+              </label><br>
+              <label>Hasło
+                <input  type="password" placeholder="Hasło" aria-placeholder="Hasło">
+              </label><br>
+              <label >Zapamiętaj 
+              <input type="checkbox">
+            </label>
+              </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Anuluj</button>
+            <button type="button" class="btn btn-secondary">Zarejestruj się</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </head>
 <body>
     <section name="galeria">
