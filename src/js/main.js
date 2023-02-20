@@ -49,9 +49,3 @@ carousel1
 // koniec slajdera
 
 // modal.js
-
-fetch("modal.html")
-	.then(response => response.text())
-	.then(data => {
-		document.getElementById("modal-container").innerHTML = data;
-	});

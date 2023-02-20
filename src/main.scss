@@ -38,7 +38,8 @@ $list-group-action-active-bg: none;
 	color: $secondary;
 }
 .nav-link:active,
-.nav-link:focus {
+.nav-link:focus,
+.nav-link.active {
 	background-color: $info;
 	color: white;
 }
@@ -73,6 +74,14 @@ ul > li.dropdown:hover ul {
 }
 .btn:hover {
 	font-weight: bold;
+}
+.modal-body {
+	form > button.btn {
+		color: $primary;
+	}
+	form > button:hover {
+		color: white;
+	}
 }
 .img-fluid {
 	padding: 1rem;
