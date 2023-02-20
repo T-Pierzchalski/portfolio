@@ -18,9 +18,11 @@ body {
 }
 
 #Zainteresowania,
-#Umiejetnosci,
 #UmiejetnosciMiekkie {
 	scroll-margin-top: 200px;
+}
+#Umiejetnosci {
+	scroll-margin-top: 0;
 }
 
 .side-bar {

@@ -9,6 +9,17 @@ $info: blue;
 $warning: yellow;
 $danger: red;
 
+$list-group-color: white;
+$list-group-bg: $primary;
+
+$list-group-hover-bg: white;
+$list-group-active-color: $primary;
+$list-group-active-bg: white;
+$list-group-active-border-color: $list-group-active-bg;
+
+$list-group-action-active-color: $primary;
+$list-group-action-active-bg: none;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
@@ -98,8 +109,10 @@ header {
 // listy
 
 .list-group {
-	background-color: $primary;
-	color: black;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
+	a.list-group-item:hover {
+		font-weight: bold;
+		background-color: white;
+	}
 }

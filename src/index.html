@@ -13,60 +13,58 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/style.css">
     
-    
-
-
-
-
-    <!-- nav -->
-    <nav class="navbar navbar-expand-md bg-primary sticky-md-top">
-      <div class="container-fluid">
-        <a class="navbar-brand ms-3 fs-2 fw-bold" href="#"><img src="images/logo.png" alt="logo" class="rounded img-fluid"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 text-center">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Strona główna</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Wpisy</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="rozwiń">
-                Kategorie
-              </a>
-              <ul class="dropdown-menu mx-auto px-md-1 bg-secondary">
-                <li><a class="dropdown-item" href="#Zainteresowania">Zainteresowania</a></li>
-                <li><a class="dropdown-item" href="#Umiejetnosci">Umiejętności</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#UmiejetnosciMiekkie">Umiejętności Miękkie</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galeria</a>
-            </li>
-          </ul>
-          <form class="d-flex d-md-none d-lg-flex mx-auto mb-3 mb-md-0 form-size" role="search">
-            <input class="order-2 form-control ms-2 me-md-2 form-search" type="Search" placeholder="Wyszukaj w serwisie" aria-label="Wyszukaj">
-            <button class="order-1 btn btn-outline-info" type="submit">Szukaj</button>
-          </form>
-          <form action="" class="d-flex mx-auto me-md-3">
-            <button class="btn btn-outline-secondary me-1 w-100 w-md-25">Logowanie</button>
-            <button class="btn btn-secondary rounded">Rejestracja</button>
-          </form>
+       <!-- nav -->
+       <nav class="navbar navbar-expand-md bg-primary sticky-md-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3 fs-2 fw-bold" href="index.html"><img src="images/logo.png" alt="logo" class="rounded img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 text-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Strona główna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wpisy</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="rozwiń">
+                  Kategorie
+                </a>
+                <ul class="dropdown-menu mx-auto px-md-1 bg-secondary">
+                  <li><a class="dropdown-item" href="#Zainteresowania">Zainteresowania</a></li>
+                  <li><a class="dropdown-item" href="#Umiejetnosci">Umiejętności</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#UmiejetnosciMiekkie">Umiejętności Miękkie</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+            </ul>
+            <form class="d-flex d-md-none d-lg-flex mx-auto mb-3 mb-md-0 form-size" role="search">
+              <input class="order-2 form-control ms-2 me-md-2 form-search" type="Search" placeholder="Wyszukaj w serwisie" aria-label="Wyszukaj">
+              <button class="order-1 btn btn-outline-info" type="submit">Szukaj</button>
+            </form>
+            <form action="" class="d-flex mx-auto me-md-3">
+              <button class="btn btn-outline-secondary me-1 w-100 w-md-25" data-bs-toggle="modal" data-bs-target="#loginModal">Logowanie</button>
+              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#rejestracjaModal">Rejestracja</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      
+
 </head>
+
 <body>
   
-<div class="side-bar float-end d-none d-lg-block">
+<div class="side-bar float-end d-none d-xl-block">
     <div class="list-group" id="pasek-boczny">
-      <a class="list-group-item list-group-item-action" href="#Zainteresowania">Zainteresowania</a>
-      <a class="list-group-item list-group-item-action" href="#Umiejetnosci">Umiejętności</a>
-      <a class="list-group-item list-group-item-action" href="#UmiejetnosciMiekkie">Umiejętności miękkie</a>
+      <a class="list-group-item" href="#Zainteresowania">Zainteresowania</a>
+      <a class="list-group-item" href="#Umiejetnosci">Umiejętności</a>
+      <a class="list-group-item" href="#UmiejetnosciMiekkie">Umiejętności miękkie</a>
     </div>
 </div>
 <div data-bs-spy="scroll" data-bs-target="#pasek-boczny" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
@@ -280,10 +278,11 @@
   </div>
 </section>
 <footer class="mt-3 mt-md-5 footer container-fluid fw-bold bg-primary text-white">&copy; Tomasz Pierzchalski, 2023, Portfolio</footer>
-<body>
 
 
 
+
+<!-- modale -->
 
 
 
