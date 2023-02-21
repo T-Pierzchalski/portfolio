@@ -9,8 +9,19 @@ body,
 	font-family: raleway;
 	scroll-behavior: smooth;
 }
+
 body {
-	background-color: hsl(0, 0%, 20%, 0.25);
+	position: relative;
+	height: 100vh;
+	background-image: radial-gradient(
+			rgba(51, 51, 51, 0.3),
+			rgba(250, 250, 250, 0.5)
+		),
+		url("https://cdn.pixabay.com/photo/2020/01/27/18/47/background-4798051__340.jpg");
+	background-repeat: repeat;
+}
+.github:hover {
+	filter: invert(100%);
 }
 .source {
 	font-size: 0.75rem;
@@ -32,6 +43,14 @@ body {
 	left: 0;
 	top: 200px;
 	max-width: max-content;
+}
+
+.main-background {
+	background: url("https://camo.githubusercontent.com/40165a147c3dcea0fa1db780bb533fc5f98546ccfb9d5d05ddb2f429277f5348/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966");
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	border-radius: 20%;
 }
 
 @media screen and (min-width: 768px) {

@@ -23,24 +23,24 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 text-center">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="Strona główna" href="index.html">Strona główna</a>
+                <a class="nav-link" aria-current="Strona główna" href="main.html">Strona główna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="index.html">Wpisy</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="rozwiń">
                   Kategorie
                 </a>
                 <ul class="dropdown-menu mx-auto px-md-1 bg-secondary">
-                  <li><a class="dropdown-item" href="#Zainteresowania">Zainteresowania</a></li>
-                  <li><a class="dropdown-item" href="#Umiejetnosci">Umiejętności</a></li>
+                  <li><a class="dropdown-item" href="index.html#Zainteresowania"></a></li>
+                  <li><a class="dropdown-item" href="index.html#Umiejetnosci">Umiejętności</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#UmiejetnosciMiekkie">Umiejętności Miękkie</a></li>
+                  <li><a class="dropdown-item" href="index.html#UmiejetnosciMiekkie">Umiejętności Miękkie</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Wpisy</a>
               </li>
             </ul>
             <form class="d-flex d-md-none d-lg-flex mx-auto mb-3 mb-md-0 form-size" role="search">
@@ -126,13 +126,16 @@
 </div>
 <div data-bs-spy="scroll" data-bs-target="#pasek-boczny" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 <!-- Slajdery -->
+
+
+
 <section name="Slajder z zainteresowaniami" id="Zainteresowania">
+<div class="container mt-4 rounded">
   <header>
-    <h1 class="h2 text-center fw-bold mt-3 text-secondary offset-1">GŁÓWNE ZAINTERESOWANIA</h1>
+    <h1 class="h1 text-center fw-bold my-3 my-md-5 text-secondary text-info bg-secondary rounded mx-5">GŁÓWNE ZAINTERESOWANIA</h1>
   </header>
-<div class="container mt-4 rounded d-sm-flex flex-wrap justify-content-between">
-  <div class="row">
-  <div class="offset-lg-1 col-lg-5 bg-primary mb-3 mb-lg-0 ">
+  <div class="row d-sm-flex flex-wrap">
+  <div class=" col-lg-5 bg-primary mb-3 mb-lg-0 ">
 <div id="Slajder-Samochody" class="carousel slide" data-bs-interval="false">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#Slajder-Samochody" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -233,11 +236,11 @@
 
 <!-- Kompetencje -->
 <section>
-  <header>
-    <h1 class="fw-bold h1 fs-2 text-center mt-5 text-secondary" id="Umiejetnosci">UMIEJĘTNOŚCI</h1>
-  </header>
-  <div class="container mt-5 rounded d-sm-flex flex-wrap">
-    <div class="row justify-content-between">
+  <div class="container mt-5 rounded">
+    <header>
+      <h1 class="fw-bold h1 fs-2 text-center my-3 my-md-5 text-info bg-secondary rounded mx-5" id="Umiejetnosci">UMIEJĘTNOŚCI</h1>
+    </header>
+    <div class="row  d-sm-flex flex-wrap justify-content-between ">
       <div class="col-md-5 col-lg-3 bg-primary mx-sm-3 mt-2 mt-sm-3">
       <header>
         <h1 class="h3 fw-bold">HTML</h1>
@@ -270,8 +273,8 @@
       <p>Znajomość języka scss, sass, który oferuję wiecej niż podstawowy język css. Języka używam głównie w celu edycji bootstrapowych klas.</p></div></div>
 
       <!-- Umięjetności miekkie -->
-      <header class="col-12" id="UmiejetnosciMiekkie">
-      <h1 class="fw-bold h1 fs-2 text-center my-3 my-md-5 fw-bold text-secondary">UMIEJĘTNOŚCI MIĘKKIE</h1>
+      <header class="col-12 " id="UmiejetnosciMiekkie">
+      <h1 class="fw-bold h1 fs-2 text-center my-3 my-md-5 fw-bold text-info bg-secondary rounded mx-5">UMIEJĘTNOŚCI MIĘKKIE</h1>
     </header>
       <div class="row justify-content-between">
       <div class="col-md-3 col-lg-2 bg-primary mx-sm-3 mt-2 mt-sm-3">
@@ -335,11 +338,6 @@
   </div>
 </section>
 <footer class="mt-3 mt-md-5 footer container-fluid fw-bold bg-primary text-white">&copy; Tomasz Pierzchalski, 2023, Portfolio</footer>
-
-
-
-
-<!-- modale -->
 
 
 
