@@ -49,3 +49,5 @@ carousel1
 // koniec slajdera
 
 // modal.js
+
+// tooltips

@@ -44,16 +44,20 @@ $list-group-action-active-bg: none;
 .dropdown-item {
 	color: white;
 }
-ul > li.dropdown:hover ul {
-	display: block;
+@media screen and (min-width: 576px) {
+	ul > li.dropdown:hover ul {
+		display: block;
+	}
 }
 .navbar-brand {
-	color: $white;
 	max-width: 30%;
 }
 .navbar-brand:hover {
 	scale: 0.8;
 	transition: scale 2s ease-in-out;
+}
+.navbar-toggler-icon:is(:hover, :active, :focus) {
+	filter: invert(100%);
 }
 .btn-outline-secondary {
 	border: solid 3px $secondary;
