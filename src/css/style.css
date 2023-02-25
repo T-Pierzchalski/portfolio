@@ -29,13 +29,17 @@ body {
 	text-justify: inter-word;
 }
 
-#Zainteresowania,
+#Zainteresowania {
+	scroll-margin-top: 350px;
+	scroll-behavior: smooth;
+}
+
 #UmiejetnosciMiekkie {
-	scroll-margin-top: 200px;
+	scroll-margin-top: 100px;
 	scroll-behavior: smooth;
 }
 #Umiejetnosci {
-	scroll-margin-top: 0;
+	scroll-margin-top: 50px;
 	scroll-behavior: smooth;
 }
 

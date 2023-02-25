@@ -68,6 +68,7 @@ $list-group-action-active-bg: none;
 }
 .form-search {
 	border: 2px solid $info;
+	background-color: #e9ecef !important;
 }
 .form-search:hover,
 .form-search:focus {
@@ -110,10 +111,10 @@ $list-group-action-active-bg: none;
 	}
 }
 header {
-	h1 {
-		a {
-			text-decoration: none;
-		}
+	h1.section-header {
+		background-color: $secondary;
+		color: white;
+		text-shadow: 0 0 8px $info;
 	}
 }
 // listy
