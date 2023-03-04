@@ -1,147 +1,269 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
-    <!-- css -->
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-       <!-- nav -->
-       <nav class="navbar navbar-expand-md bg-primary sticky-md-top">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-3 fs-2 fw-bold" href="main.html"><img src="images/logo.png" alt="logo" class="rounded"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 text-center">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="Strona główna" href="main.html">Strona główna</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle nav-link" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="rozwiń">
-                  Portfolio
-                </a>
-                <ul class="dropdown-menu mx-auto px-md-1 bg-secondary">
-                  <li><a class="dropdown-item" href="index.html#Zainteresowania">Zainteresowania</a></li>
-                  <li><a class="dropdown-item" href="index.html#Umiejetnosci">Umiejętności</a></li>
-                  <li><a class="dropdown-item" href="index.html#UmiejetnosciMiekkie">Umiejętności Miękkie</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galeria</a>
-              </li>
- 
-            </ul>
-            <form class="d-flex d-md-none d-lg-flex mx-auto mb-3 mb-md-0 form-size" role="search">
-              <input class="order-2 form-control ms-2 me-md-2 form-search" type="Search" placeholder="Wyszukaj w serwisie" aria-label="Wyszukaj">
-              <button class="order-1 btn btn-outline-info text-white" type="submit">Szukaj</button>
-            </form>
-            <div class="d-flex flex-row flex-sm-column flex-xl-row mx-auto me-md-3">
-              <button class="btn btn-outline-secondary me-1 w-100" data-bs-toggle="modal" data-bs-target="#loginModal" href="#loginModal" role="button">Logowanie</button>
-              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#rejestracjaModal">Rejestracja</button>
-            </div>
-          </div>
-        </div>
-      </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,100&display=swap"
+			rel="stylesheet" />
+		<!-- css -->
+		<link rel="stylesheet" href="css/main.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
-      
+		<!-- nav -->
+		<nav class="navbar navbar-expand-md bg-primary sticky-md-top">
+			<div class="container-fluid">
+				<a class="navbar-brand ms-3 fs-2 fw-bold" href="main.html"
+					><img src="images/logo.png" alt="logo" class="rounded"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 text-center">
+						<li class="nav-item">
+							<a
+								class="nav-link active text-white"
+								aria-current="Strona główna"
+								href="main.html"
+								>Strona główna</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle nav-link"
+								href="index.html"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+								aria-label="rozwiń">
+								Portfolio
+							</a>
+							<ul class="dropdown-menu mx-auto px-md-1 bg-secondary">
+								<li>
+									<a class="dropdown-item" href="index.html#Zainteresowania"
+										>Zainteresowania</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="index.html#Umiejetnosci"
+										>Umiejętności</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="index.html#UmiejetnosciMiekkie"
+										>Umiejętności Miękkie</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="galeria.html">Galeria</a>
+						</li>
+					</ul>
+					<form
+						class="d-flex d-md-none d-lg-flex mx-auto mb-3 mb-md-0 form-size"
+						role="search">
+						<input
+							class="order-2 form-control ms-2 me-md-2 form-search"
+							type="Search"
+							placeholder="Wyszukaj w serwisie"
+							aria-label="Wyszukaj" />
+						<button
+							class="order-1 btn btn-outline-info text-white"
+							type="submit">
+							Szukaj
+						</button>
+					</form>
+					<div
+						class="d-flex flex-row flex-sm-column flex-xl-row mx-auto me-md-3">
+						<button
+							class="btn btn-outline-secondary me-1 w-100"
+							data-bs-toggle="modal"
+							data-bs-target="#loginModal"
+							href="#loginModal"
+							role="button">
+							Logowanie
+						</button>
+						<button
+							class="btn btn-secondary"
+							data-bs-toggle="modal"
+							data-bs-target="#rejestracjaModal">
+							Rejestracja
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Logowanie</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-      </div>
-        <form action="" class="modal-body d-flex flex-column justify-content-center">
-          <label>Login
-          <input type="text" placeholder="Login" aria-placeholder="Login">
-        </label><br>
-        <label>Hasło
-          <input  type="password" placeholder="Hasło" aria-placeholder="Hasło">
-        </label><br>
-        <label >Zapamiętaj 
-        <input type="checkbox">
-      </label>
-        </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Anuluj</button>
-        <button type="button" class="btn btn-secondary">Zaloguj się</button>
-      </div>
-    </div>
-  </div>
-</div>
+		<div
+			class="modal fade"
+			id="loginModal"
+			tabindex="-1"
+			aria-labelledby="loginModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="loginModalLabel">Logowanie</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Zamknij"></button>
+					</div>
+					<form
+						action=""
+						class="modal-body d-flex flex-column justify-content-center">
+						<label
+							>Login
+							<input
+								type="text"
+								placeholder="Login"
+								aria-placeholder="Login" /> </label
+						><br />
+						<label
+							>Hasło
+							<input
+								type="password"
+								placeholder="Hasło"
+								aria-placeholder="Hasło" /> </label
+						><br />
+						<label
+							>Zapamiętaj
+							<input type="checkbox" />
+						</label>
+					</form>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal">
+							Anuluj
+						</button>
+						<button type="button" class="btn btn-secondary">Zaloguj się</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<!-- Modal rejestracji -->
-<div class="modal fade" id="rejestracjaModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="registerModalLabel">Rejestracja</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-      </div>
-          <form action="" class="modal-body d-flex flex-column justify-content-center">
-            <label>Email
-              <input type="text" placeholder="Email" aria-placeholder="Email">
-            </label><br>
-            <label>Login
-            <input type="text" placeholder="Login" aria-placeholder="Login">
-          </label><br>
-          <label>Hasło
-            <input  type="password" placeholder="Hasło" aria-placeholder="Hasło">
-          </label><br>
-          <label >Zapamiętaj 
-          <input type="checkbox">
-        </label>
-          </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Anuluj</button>
-        <button type="button" class="btn btn-secondary">Zarejestruj się</button>
-      </div>
-    </div>
-  </div>
-</div>
-      
-</head>
+		<!-- Modal rejestracji -->
+		<div
+			class="modal fade"
+			id="rejestracjaModal"
+			tabindex="-1"
+			aria-labelledby="registerModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="registerModalLabel">Rejestracja</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Zamknij"></button>
+					</div>
+					<form
+						action=""
+						class="modal-body d-flex flex-column justify-content-center">
+						<label
+							>Email
+							<input
+								type="text"
+								placeholder="Email"
+								aria-placeholder="Email" /> </label
+						><br />
+						<label
+							>Login
+							<input
+								type="text"
+								placeholder="Login"
+								aria-placeholder="Login" /> </label
+						><br />
+						<label
+							>Hasło
+							<input
+								type="password"
+								placeholder="Hasło"
+								aria-placeholder="Hasło" /> </label
+						><br />
+						<label
+							>Zapamiętaj
+							<input type="checkbox" />
+						</label>
+					</form>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal">
+							Anuluj
+						</button>
+						<button type="button" class="btn btn-secondary">
+							Zarejestruj się
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</head>
 
-<body>
-    <div class="container mt-3 pt-5">
-    <div class="row d-lg-flex flex-column flex-lg-row justify-content-between">
-        <div class="col-12 col-lg-4 bg-primary rounded h-75 mt-5 py-3 text-center">
-          <header>
-            <h1 class="h1 fw-bold float-start rounded section-header">Witaj na mojej stronie!</h1>
-          </header>
-            <span class="mt-3 float-start text-white">
-                <p>Cześć! Jestem Tomek, interesuję się web-designem i szukam pracy właśnie z tym związanej!
-                </p>
-                Witaj na mojej stronie prezentującej moje kompetencję! Zawartość, którą tu zobaczysz opisuję moje wszystkie umiejętności związane z front-end i nie tylko.
-                <span class="mt-5 float-start">
-                    Zajrzyj na moje repozytorium github: 
-                    <br><a href="https://github.com/TrueDie3?tab=repositories" target="_blank" > <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" class="img-fluid w-25 github"></a>
-                </span>
-                </span>
-            </div>
-        <div class="d-none d-lg-block offset-1 main-background col-12 col-sm-7 float-end me-auto"> 
-        </div>
-    </div>
-</div>
+	<body>
+		<div class="container mt-3 pt-5">
+			<div
+				class="row d-lg-flex flex-column flex-lg-row justify-content-between">
+				<div
+					class="col-12 col-lg-4 bg-primary rounded h-75 mt-5 py-3 text-center">
+					<header>
+						<h1 class="h1 fw-bold float-start rounded section-header">
+							Witaj na mojej stronie!
+						</h1>
+					</header>
+					<span class="mt-3 float-start text-white">
+						<p>
+							Cześć! Jestem Tomek, interesuję się web-designem i szukam pracy
+							właśnie z tym związanej!
+						</p>
+						Witaj na mojej stronie prezentującej moje kompetencję! Zawartość,
+						którą tu zobaczysz opisuję moje wszystkie umiejętności związane z
+						front-end i nie tylko.
+						<span class="mt-5 float-start">
+							Zajrzyj na moje repozytorium github:
+							<br /><a
+								href="https://github.com/TrueDie3?tab=repositories"
+								target="_blank">
+								<img
+									src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+									alt="github"
+									class="img-fluid w-25 github"
+							/></a>
+						</span>
+					</span>
+				</div>
+				<div
+					class="d-none d-lg-block offset-1 main-background col-12 col-sm-7 float-end me-auto"></div>
+			</div>
+		</div>
 
+		<footer
+			class="mt-2 mt-md-5 footer container-fluid fw-bold bg-primary text-white fixed-bottom">
+			&copy; Tomasz Pierzchalski, 2023, Portfolio
+		</footer>
 
-    <footer class="mt-2 mt-md-5 footer container-fluid fw-bold bg-primary text-white fixed-bottom">&copy; Tomasz Pierzchalski, 2023, Portfolio</footer>
-
-
-
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
-
+		<script src="js/index.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
