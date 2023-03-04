@@ -1,23 +1,28 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Moje własne portfolio dotyczące umiejętności Front End przy projektowaniu stron WWW.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TrueDie3/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TrueDie3/portfolio/issues"
-  },
-  "homepage": "https://github.com/TrueDie3/portfolio#readme",
-  "dependencies": {
-    "bootstrap": "^5.2.3"
-  }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Moje własne portfolio dotyczące umiejętności Front End przy projektowaniu stron WWW.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TrueDie3/portfolio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/TrueDie3/portfolio/issues"
+	},
+	"homepage": "https://github.com/TrueDie3/portfolio#readme",
+	"dependencies": {
+		"bootstrap": "^5.2.3"
+	},
+	"devDependencies": {
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	}
 }
