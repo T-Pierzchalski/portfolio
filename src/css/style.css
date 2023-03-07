@@ -27,6 +27,7 @@ body {
 .source {
 	font-size: 0.75rem;
 	text-justify: inter-word;
+	color: red;
 }
 
 #Zainteresowania {
