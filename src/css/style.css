@@ -30,6 +30,10 @@ body {
 	text-justify: inter-word;
 	color: red;
 }
+footer {
+	position: absolute;
+	bottom: 0;
+}
 
 #Zainteresowania {
 	scroll-margin-top: 350px;
