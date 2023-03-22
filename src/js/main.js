@@ -1,6 +1,6 @@
 function toggleDisplay(elementId, buttonId) {
-	var element = document.getElementById(elementId);
-	var button = document.getElementById(buttonId);
+	const element = document.getElementById(elementId);
+	const button = document.getElementById(buttonId);
 
 	if (element.style.display === "none") {
 		element.style.display = "block";
@@ -13,12 +13,12 @@ function toggleDisplay(elementId, buttonId) {
 	}
 }
 // slajder
-var carousel1 = document.querySelector("#Slajder-Samochody");
-var carousel2 = document.querySelector("#text-slider");
+const carousel1 = document.querySelector("#Slajder-Samochody");
+const carousel2 = document.querySelector("#text-slider");
 
 carousel1.addEventListener("slide.bs.carousel", function (event) {
-	var slideIndex = event.to;
-	var activeItem = carousel2.querySelector(".carousel-item.active");
+	const slideIndex = event.to;
+	const activeItem = carousel2.querySelector(".carousel-item.active");
 	activeItem.classList.remove("active");
 	carousel2
 		.querySelectorAll(".carousel-item")
@@ -26,8 +26,8 @@ carousel1.addEventListener("slide.bs.carousel", function (event) {
 });
 
 carousel2.addEventListener("slide.bs.carousel", function (event) {
-	var slideIndex = event.to;
-	var activeItem = carousel1.querySelector(".carousel-item.active");
+	const slideIndex = event.to;
+	const activeItem = carousel1.querySelector(".carousel-item.active");
 	activeItem.classList.remove("active");
 	carousel1
 		.querySelectorAll(".carousel-item")
