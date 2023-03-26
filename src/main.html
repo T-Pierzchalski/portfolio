@@ -41,7 +41,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galeria</a>
+                <a class="nav-link" href="projekty.html">Projekty</a>
               </li>
  
             </ul>
@@ -49,75 +49,17 @@
               <input class="order-2 form-control ms-2 me-md-2 form-search" type="Search" placeholder="Wyszukaj w serwisie" aria-label="Wyszukaj">
               <button class="order-1 btn btn-outline-info text-white" type="submit">Szukaj</button>
             </form>
-            <div class="d-flex flex-row flex-sm-column flex-xl-row mx-auto me-md-3">
-              <button class="btn btn-outline-secondary me-1 w-100" data-bs-toggle="modal" data-bs-target="#loginModal" href="#loginModal" role="button">Logowanie</button>
-              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#rejestracjaModal">Rejestracja</button>
-            </div>
+
           </div>
         </div>
       </nav>
 
-      
-<!-- Modal logowania -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Logowanie</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-      </div>
-        <form action="" class="modal-body d-flex flex-column justify-content-center">
-          <label>Login
-          <input type="text" placeholder="Login" aria-placeholder="Login">
-        </label><br>
-        <label>Hasło
-          <input  type="password" placeholder="Hasło" aria-placeholder="Hasło">
-        </label><br>
-        <label >Zapamiętaj 
-        <input type="checkbox">
-      </label>
-        </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Anuluj</button>
-        <button type="button" class="btn btn-secondary">Zaloguj się</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Modal rejestracji -->
-<div class="modal fade" id="rejestracjaModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="registerModalLabel">Rejestracja</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-      </div>
-          <form action="" class="modal-body d-flex flex-column justify-content-center">
-            <label>Email
-              <input type="text" placeholder="Email" aria-placeholder="Email">
-            </label><br>
-            <label>Login
-            <input type="text" placeholder="Login" aria-placeholder="Login">
-          </label><br>
-          <label>Hasło
-            <input  type="password" placeholder="Hasło" aria-placeholder="Hasło">
-          </label><br>
-          <label >Zapamiętaj 
-          <input type="checkbox">
-        </label>
-          </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Anuluj</button>
-        <button type="button" class="btn btn-secondary">Zarejestruj się</button>
-      </div>
-    </div>
-  </div>
-</div>
       
 </head>
 
 <body>
+  
 <!-- sidebar nav -->
 <nav class="side-bar float-end d-none d-xl-block">
     <div class="list-group" id="pasek-boczny">
@@ -182,7 +124,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h1>Front-end</h1>
-          <p class="text-center justify">Od momentu rozpoczęcia studiów, zacząłem mocno interesować się "web-developerką". Dziś jestem w stanie zbudować cały serwis z zachowaną responsywnością. <strong>Moje wszystkie umiejętności znajdą się w sekcji niżej.<br></strong>
+          <div class="text-center justify">Od momentu rozpoczęcia studiów, zacząłem mocno interesować się "web-developerką". Dziś jestem w stanie zbudować cały serwis z zachowaną responsywnością. <strong>Moje wszystkie umiejętności znajdą się w sekcji niżej.<br></strong>
             <button class="btn btn-info float-end my-1" id="rozwin3" onclick="toggleDisplay('ukryty-tekst3', 'rozwin3')">Rozwiń</button>
             <p style="display:none"  class="text-center justify" id="ukryty-tekst3">
               Specjalista IT w zakresie frontendu musi znać trzy najważniejsze języki kodowania, czyli HTML, CSS i JavaScript. Każdy z nich spełnia inne funkcje w programowaniu stron i aplikacji:
@@ -198,11 +140,11 @@
               </a>
             </text>
             </p>
-          </p>
+          </div>
         </div>
         <div class="carousel-item">
           <h1>Hip Hop</h1>
-          <p class="text-center justify">Muzyka, która jest najbliższa mojemu sercu to hip-hop. Polega on na recytowaniu "wierszu" w rytmie muzyki.<br>
+          <div class="text-center justify">Muzyka, która jest najbliższa mojemu sercu to hip-hop. Polega on na recytowaniu "wierszu" w rytmie muzyki.<br>
             <button class="btn btn-info float-end my-1" id="rozwin2" onclick="toggleDisplay('ukryty-tekst2', 'rozwin2')">Rozwiń</button>
             <p style="display:none"  class="text-center justify" id="ukryty-tekst2">
               Gatunek jest oparty na rapowaniu oraz muzyce disco, soul i funk. Na gatunek muzyczny hip-hopu składają się: rytmizowany styl muzyki o stałym BPM oraz rapowaniu, czyli rytmicznym wypowiadaniu tekstu. Styl muzyczny hip-hop jest jednym z filarów kultury hip-hopowej.
@@ -212,27 +154,19 @@
               <text class="fw-light source">
               źródło: Wikipedia - <a class="link" href="https://pl.wikipedia.org/wiki/Hip-hop_(muzyka)#Charakterystyka" target="_blank">https://pl.wikipedia.org/wiki/Hip-hop_(muzyka)#Charakterystyka</a></text>
             </p>
-          </p>
+          </div>
         </div>
         <div class="carousel-item">
           <h1>Manchester United</h1>
-          <p class="text-center justify">Manchester United to klub piłkarski, którym interesuję się od dziecka. Pamiętam złote czasy sir Alexa Fergusona, piękne bramki i liczne trofea. <br>
+          <div class="text-center justify">Manchester United to klub piłkarski, którym interesuję się od dziecka. Pamiętam złote czasy sir Alexa Fergusona, piękne bramki i liczne trofea. <br>
             <button class="btn btn-info float-end my-1" id="rozwin" onclick="toggleDisplay('ukryty-tekst', 'rozwin')">Rozwiń</button>
             <p class="text-center justify" style="display:none" id="ukryty-tekst">
               Manchester United to angielski klub piłkarski z siedzibą w Manchesterze, założony w 1878 roku. Jest to jeden z najbardziej utytułowanych klubów na świecie, zdobywca m.in. 20 tytułów mistrza Anglii, 3 zwycięstw w Lidze Mistrzów oraz Pucharów Europy. Znani piłkarze, którzy grali w barwach Manchesteru United to m.in. George Best, Eric Cantona, Ryan Giggs, Paul Scholes, David Beckham czy Cristiano Ronaldo.
             </p>
-          </p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    
-
-  
-</div>
-
-
-</div>
 </section>
 
 

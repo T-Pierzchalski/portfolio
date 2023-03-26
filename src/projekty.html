@@ -21,7 +21,7 @@
 			href="images/logo_favicon.png"
 			type="image/x-icon" />
 
-		<!-- nawigacja -->
+		<!-- nav -->
 		<nav class="navbar navbar-expand-md bg-primary sticky-md-top">
 			<div class="container-fluid">
 				<a class="navbar-brand ms-3 fs-2 fw-bold" href="index.html"
@@ -37,20 +37,17 @@
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<nav class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 text-center">
 						<li class="nav-item">
-							<a
-								class="nav-link active text-white"
-								aria-current="Strona główna"
-								href="index.html"
+							<a class="nav-link" aria-current="Strona główna" href="index.html"
 								>Strona główna</a
 							>
 						</li>
 						<li class="nav-item dropdown">
 							<a
 								class="nav-link dropdown-toggle nav-link"
-								href="main.html"
+								href="index.html"
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
@@ -76,7 +73,9 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="projekty.html">Projekty</a>
+							<a class="nav-link active text-white" href="projekty.html"
+								>Projekty</a
+							>
 						</li>
 					</ul>
 					<form
@@ -93,52 +92,50 @@
 							Szukaj
 						</button>
 					</form>
-				</nav>
+				</div>
 			</div>
 		</nav>
 	</head>
-
 	<body>
-		<div class="container mt-3 mb-1 pt-5">
-			<div
-				class="row d-lg-flex flex-column flex-lg-row justify-content-between">
-				<div
-					class="col-12 col-lg-4 bg-primary rounded h-75 mt-5 py-3 text-center">
-					<header>
-						<h1 class="h1 fw-bold float-start rounded section-header">
-							Witaj na mojej stronie!
-						</h1>
-					</header>
-					<span class="mt-3 float-start text-white">
-						<p>
-							Cześć! Jestem Tomek, interesuję się web-designem i szukam pracy
-							właśnie z tym związanej!
-						</p>
-						Witaj na mojej stronie prezentującej moje kompetencje! Zawartość,
-						którą tu zobaczysz, opisuję moje wszystkie umiejętności związane z
-						front-end i nie tylko.
-						<span class="mt-5 float-start">
-							Zajrzyj na mój profil na Git hub:
-							<br /><a
-								href="https://github.com/TrueDie3?tab=repositories"
-								target="_blank">
-								<img
-									src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-									alt="github"
-									class="img-fluid w-25 github"
-							/></a>
-						</span>
-					</span>
+		<section name="galeria">
+			<header class="w-50 mx-auto">
+				<h1
+					class="h1 text-center fw-bold my-3 my-md-5 text-secondary text-info bg-secondary rounded mx-auto">
+					Projekty
+				</h1>
+			</header>
+			<div class="container bg-secondary rounded">
+				<div class="row flex justify-content-center py-1 py-sm-4">
+					<div
+						class="col-11 col-sm-6 col-md-6 col-lg-6 bg-primary my-1 text-center mx-1">
+						<h2 class="my-1">Kalkulator</h2>
+						<a href="https://calculator-truedie3.netlify.app/" target="_blank"
+							><img
+								src="https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/6420379940a9a11f904ef3e2/screenshot_2023-03-26-12-16-31-0000.png"
+								alt="Kalkulator link"
+								class="img-fluid h-75"
+						/></a>
+					</div>
+					<div
+						class="col-11 col-sm-6 col-md-6 col-lg-5 bg-primary my-1 text-center mx-1">
+						<h2 class="my-1">Nowy</h2>
+						<a href="" target="_blank"
+							><img
+								src="https://cdn.pixabay.com/photo/2017/07/01/15/38/coming-soon-2461832_640.jpg"
+								alt="Image 2"
+								class="img-fluid h-75"
+						/></a>
+					</div>
 				</div>
-				<div
-					class="d-none d-lg-block offset-1 main-background col-12 col-sm-7 float-end me-auto"></div>
 			</div>
-		</div>
+		</section>
 
 		<footer
-			class="mt-2 mt-md-5 footer container-fluid fw-bold bg-primary text-white">
+			class="mt-3 mt-md-5 footer container-fluid fw-bold bg-primary text-white">
 			&copy; Tomasz Pierzchalski, 2023, Portfolio
 		</footer>
+
+		<!-- scripts -->
 
 		<script src="js/index.js"></script>
 		<script src="js/main.js"></script>
